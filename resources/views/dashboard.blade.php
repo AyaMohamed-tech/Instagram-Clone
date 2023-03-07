@@ -1,15 +1,13 @@
 <x-app-layout>
-   
-    <div class="container">
-        <div class="row">
-            <div class="col-3">
-              <img src="https://cdn.changelog.com/uploads/icons/news_sources/Qo/icon_large.png?v=63680075631" width="250" height="250" class="rounded-full">
-            </div>
-            
-            <div class="col-9">
+    <x-slot name="header">
+        <h2 class="h4 font-weight-bold">
+            {{ __('Dashboard') }}
+        </h2>
+    </x-slot>
 
-            </div>
+    <div class="card my-4">
+        <div class="card-body">
+            You're logged in!
         </div>
     </div>
- 
 </x-app-layout>
